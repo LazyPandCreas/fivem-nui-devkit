@@ -1,0 +1,15 @@
+{
+  "name": "fivem-nui-devkit",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "dev:hud": "pnpm --filter example-hud dev",
+    "build:hud": "pnpm --filter example-hud build",
+    "watch:bridge": "node scripts/watch-restart.js bridge ./resources/bridge"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
